@@ -414,7 +414,7 @@ body {
 }
 
 .energlobix__navbar .logo {
-  max-height: 76.058px;
+  max-height: 130px;
   /* Adjust as needed */
 }
 
@@ -540,7 +540,7 @@ body {
   }
 
   .energlobix__navbar .logo {
-    max-height: 57.0435px;
+    max-height: 100px;
     /* Adjust as needed */
   }
 
@@ -1073,7 +1073,7 @@ body {
 }
 
 .footer-logo {
-  width: 140px;
+  max-height: 130px;
 }
 
 .footer-subtitle {
@@ -1699,12 +1699,12 @@ body {
 }
 
 .footer-logo img {
-  width: 212.805px;
+  max-height: 140px;
 }
 
 @media (max-width: 576px) {
   .footer-logo img {
-    width: 106.4025px;
+    max-height: 100px;
   }
 }
 
