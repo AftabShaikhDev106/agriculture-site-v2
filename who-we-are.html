@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EnerGlobix :: Home</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Preload -->
+    <link
+      rel="preload"
+      as="image"
+      href="assets/Links/compressed-img/agriculture-img/agriculture-img7.webp"
+      fetchpriority="high"
+    />
+
+    <link
+      rel="preload"
+      as="image"
+      href="assets/Links/single-logo-transparent.png"
+    />
+    <link rel="preload" as="image" href="assets/Links/logo.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/local.css" />
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div id="loader" style="height: 100vh;">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="spinner-border" role="status">
+          <span class="sr-only"></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-content" style="display: none;">
+     <div class="navbar-container">
+        <div class="energlobix__navbar">
+          <a href="index.html">
+            <img src="assets/Links/logo.png" alt="" class="logo" />
+          </a>
+          <div class="navbar-right-side">
+            <div class="navlinks">
+              <ul>
+                <a href="who-we-are.html"><li class="active">Who We Are</li></a>
+                <a href="what-we-do.html"><li>What We Do</li></a>
+                <a href="how-we-do-it.html"><li>How We Do it</li></a>
+              </ul>
+            </div>
+
+            <!-- Hamburger Icon & Menu Dropdown Wrapper -->
+            <div class="menu-wrapper">
+              <button
+                class="hamburger-btn"
+                id="open-menu-btn"
+                aria-label="Toggle navigation"
+              >
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </button>
+
+              <!-- Dropdown Menu / Sidebar -->
+              <div class="nav-menu-container" id="nav-menu">
+                <!-- Sidebar Close Button (only visible on mobile/tablet) -->
+                <button class="close-menu-btn" id="close-menu-btn" aria-label="Close navigation">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path>
+                  </svg>
+                </button>
+
+                <ul class="nav-menu-list">
+
+                  <li class="nav-menu-item has-submenu">
+                    <a href="#" class="nav-menu-link toggle-submenu">
+                      Agriculture
+                      <svg class="submenu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                      </svg>
+                    </a>
+                    <ul class="nav-submenu">
+                      <li><a href="https://energlobixagriculture.kasehub.com/" class="submenu-link">Home</a></li>
+                      <li><a href="https://energlobixagriculture.kasehub.com/who-we-are.html" class="submenu-link">Who We Are</a></li>
+                      <li><a href="https://energlobixagriculture.kasehub.com/what-we-do.html" class="submenu-link">What We Do</a></li>
+                      <li><a href="https://energlobixagriculture.kasehub.com/how-we-do-it.html" class="submenu-link">How We Do It</a></li>
+                    </ul>
+                  </li>
+
+                  
+                  
+                  <li class="nav-menu-item has-submenu">
+                    <a href="#" class="nav-menu-link toggle-submenu">
+                      Energy
+                      <svg class="submenu-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="12" height="12">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                      </svg>
+                    </a>
+                    <ul class="nav-submenu">
+                      <li><a href="https://energlobix.com/" class="submenu-link">Home</a></li>
+                      <li><a href="https://energlobix.com/whoweare/" class="submenu-link">Who We Are</a></li>
+                      <li><a href="https://energlobix.com/whatwedo/" class="submenu-link">What We Do</a></li>
+                      <li><a href="https://energlobix.com/howwedoit/" class="submenu-link">How We Do It</a></li>
+                      <li><a href="https://energlobix.com/insights/" class="submenu-link">Insights</a></li>
+                      <li><a href="https://energlobix.com/contact" class="submenu-link">Contact</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-menu-item">
+                    <a
+                      href="https://energlobixholding.kasehub.com/"
+                      class="nav-menu-link"
+                      >Holding</a
+                    >
+                  </li>
+
+                   <li class="nav-menu-item">
+                  <a
+                    href="https://energlobix.kasehub.com/"
+                    class="nav-menu-link"
+                    >Main Site</a
+                  >
+                </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-slider-section">
+        <div
+          class="slide active"
+          style="
+            background-image: url('assets/Links/compressed-img/agriculture-img/agriculture-img7.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+          "
+        >
+          <div
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.4);
+              z-index: 1;
+            "
+          ></div>
+
+          <div
+            class="hero-content-wrapper"
+            style="position: relative; z-index: 2;"
+          >
+            <div class="hero-mid-section">
+              <img
+                class="single-logo-transparent"
+                src="assets/Links/single-logo-transparent.png"
+                alt=""
+              />
+              <div class="hero-mid-section-content">
+                <div class="hero-title font-adelle-sans-light">
+                  EnerGlobix Agriculture
+                </div>
+                <div class="hero-title font-adelle-sans-light">
+                  Connecting the world through essential supply
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-lower-section">
+              <div class="">
+                <a class="energlobix__links" href="#about-us">
+                  <div class="energlobix__links">Explore our vision</div>
+                  <img src="assets/Links/arrow.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div class="who-we-are-about-section">
+        <div id="about-us" class="oval-container">
+          <div
+            class="energlobix__title font-adelle-sans-bold text-center text-white"
+          >
+            Who We Are
+          </div>
+
+          <div
+            class="container energlobix__text font-adelle-sans-regular mt-3 px-0 text-center text-white"
+          >
+            EnerGlobix Agriculture operates at the core of global supply
+
+            <br class="hide-on-mobile" />
+            delivering essential commodities that sustain economies, industries,
+
+            <br class="hide-on-mobile" />
+            and communities. We work across international markets with a clear
+
+            <br class="hide-on-mobile" />
+            standard: to supply agricultural resources with consistency,
+            quality, and
+
+            <br class="hide-on-mobile" />
+            reliability at scale. This is a business built on what matters most.
+          </div>
+
+          <div
+            class="container energlobix__text font-adelle-sans-regular mt-3 px-0 text-center text-white"
+          >
+            Resources and supply, handled with precision and responsibility.
+          </div>
+
+          <div class="mt-3">
+            <a
+              class="energlobix__links font-adelle-sans-bold text-white"
+              href="what-we-do.html"
+              >Learn More</a
+            >
+          </div>
+
+          <a href="what-we-do.html"
+            ><img class="mt-1" src="assets/Links/arrow.svg" alt=""
+          /></a>
+          <div class="row mt-5">
+            <div
+              id="Purpose-and-Values"
+              class="col-lg-6 col-md-6 col-sm-12 mt-3"
+            >
+              <div class="vision-mission-card">
+                <div class="vision-image-container text-center">
+                  <img
+                    class="vision-card-image"
+                    src="assets/Links/compressed-img/agri-card-1.webp"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="vision-card-content bg-dark-green"
+                  style="z-index: auto !important;"
+                >
+                  <div class="w-100 inner-pad">
+                    <div class="divider-logo-container" style="margin-top: -45px; margin-bottom: 25px; position: relative; z-index: 10;">
+                      <img
+                        class="divider-logo"
+                        src="assets/Links/logo-mini-agri.png"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="energlobix__card-title font-adelle-sans-bold text-gold text-center mt-3"
+                    >
+                      Our Vision
+                    </div>
+                    <div
+                      class="energlobix__card-text font-adelle-sans-regular text-white mt-3 text-center"
+                    >
+                      To operate at the core of global supply, where
+
+                      <br class="hide-on-mobile" />
+                      agriculture sustains everyday life and enables
+                      <br class="hide-on-mobile" />
+                      the growth of economies, industries, and
+
+                      <br class="hide-on-mobile" />
+                      communities.
+                    </div>
+
+                    <div
+                      class="energlobix__card-text font-adelle-sans-regular text-white mt-3 text-center"
+                    >
+                      Our vision is to strengthen this system through
+
+                      <br class="hide-on-mobile" />
+                      scale, reliability, and quality, ensuring that
+
+                      <br class="hide-on-mobile" />
+                      essential commodities continue to move
+
+                      <br class="hide-on-mobile" />
+                      efficiently across markets that depend on them.
+                    </div>
+
+                    <div
+                      class="energlobix__card-text font-adelle-sans-regular text-white mt-3 text-center"
+                    >
+                      We aim to position EnerGlobix Agriculture
+
+                      <br class="hide-on-mobile" />
+                      as a trusted global supplier, recognised for
+
+                      <br class="hide-on-mobile" />
+                      consistency, strong partnerships, and the ability
+
+                      <br class="hide-on-mobile" />
+                      to deliver where it matters most.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              id="Vision-and-Mission"
+              class="col-lg-6 col-md-6 col-sm-12 mt-3"
+            >
+              <div class="vision-mission-card">
+                <div class="vision-image-container text-center">
+                  <img
+                    class="vision-card-image"
+                    src="assets/Links/compressed-img/agriculture-img/agriculture-img4.webp"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="vision-card-content bg-dark-green"
+                  style="z-index: auto !important;"
+                >
+                  <div class="w-100 inner-pad">
+                    <div class="divider-logo-container" style="margin-top: -50px; margin-bottom: 25px; position: relative; z-index: 10;">
+                      <img
+                        class="divider-logo"
+                        src="assets/Links/logo-mini-agri.png"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="energlobix__card-title font-adelle-sans-bold text-gold mt-3 text-center"
+                    >
+                      Our Mission
+                    </div>
+                    <div
+                      class="energlobix__card-text font-adelle-sans-regular text-white mt-3 text-center"
+                    >
+                      To connect global production with continuous
+
+                      <br class="hide-on-mobile" />
+                      demand through a supply chain built on
+
+                      <br class="hide-on-mobile" />
+                      precision, reliability, and control.
+                    </div>
+
+                    <div
+                      class="energlobix__card-text font-adelle-sans-bold text-gold mt-3 text-center"
+                    >
+                      We are committed to:
+                    </div>
+
+                    <div
+                      class="energlobix__card-text font-adelle-sans-regular text-white mt-3 text-center"
+                    >
+                      • Supplying essential agricultural commodities at scale
+                    </div>
+
+                    <div
+                      class="energlobix__card-text font-adelle-sans-regular text-white mt-3 text-center"
+                    >
+                      • Maintaining consistent quality across every transaction
+                    </div>
+
+                    <div
+                      class="energlobix__card-text font-adelle-sans-bold text-gold mt-3 text-center"
+                    >
+                      Our role is clear:
+                    </div>
+
+                    <div
+                      class="energlobix__card-text font-adelle-sans-regular text-white mt-3 text-center"
+                    >
+                      To move what the world depends on, efficiently,
+
+                      <br class="hide-on-mobile" />
+                      responsibly, and without compromise.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- How we do it Section (Empty Map) -->
+      <div class="empty-green-map-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-12 col-md-8 col-sm-12 px-0">
+              <div id="approach-accordion" class="approach-accordion-card">
+                <h1 class="energlobix__title font-adelle-sans-bold text-center">
+                  OUR STANDARD, OUR APPROACH,<br class="hide-on-mobile" />
+                  YOUR INVESTMENT
+                </h1>
+                <div class="approach-accordion-list">
+                  <!-- Accordion Item 1 -->
+                  <div
+                    class="approach-accordion-item"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <div class="approach-accordion-header">
+                      <span class="approach-accordion-icon">
+                        <i
+                          class="fa-solid fa-chevron-right text-xl lg:text-2xl"
+                        ></i>
+                      </span>
+                      <h3
+                        class="text-white energlobix__text font-adelle-sans-regular tracking-wide"
+                      >
+                        OUR STANDARD
+                      </h3>
+                    </div>
+                    <div class="approach-accordion-body">
+                      <p
+                        class="energlobix__card-text font-adelle-sans-regular approach-accordion-text"
+                      >
+                        At EnerGlobix Agriculture, we operate with a long-term
+                        perspective across global agriculture and commodity
+                        supply. Quality, reliability and consistency are at the
+                        core of every partnership, shipment and transaction.
+                        From fertiliser and grain to wheat and cooking oil, we
+                        work with trusted sourcing, structured logistics and a
+                        commitment to supporting industries, businesses and
+                        communities worldwide.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Accordion Item 2 -->
+                  <div
+                    class="approach-accordion-item has-border-top"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <div class="approach-accordion-header">
+                      <span class="approach-accordion-icon">
+                        <i
+                          class="fa-solid fa-chevron-right text-xl lg:text-2xl"
+                        ></i>
+                      </span>
+                      <h3
+                        class="text-white energlobix__text font-adelle-sans-regular tracking-wide"
+                      >
+                        OUR APPROACH
+                      </h3>
+                    </div>
+                    <div class="approach-accordion-body">
+                      <p
+                        class="energlobix__card-text font-adelle-sans-regular approach-accordion-text"
+                      >
+                        Agriculture is not only a commodity market — it is part
+                        of the foundation of everyday life and global
+                        development. Our approach combines international market
+                        understanding, strategic sourcing and strong supply
+                        chain coordination to connect demand with reliable
+                        delivery across global markets. We focus on building
+                        long-term business relationships through transparency,
+                        commercial understanding and operational precision
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Accordion Item 3 -->
+                  <div
+                    class="approach-accordion-item has-border-top"
+                    onclick="toggleAccordion(this)"
+                  >
+                    <div class="approach-accordion-header">
+                      <span class="approach-accordion-icon">
+                        <i
+                          class="fa-solid fa-chevron-right text-xl lg:text-2xl"
+                        ></i>
+                      </span>
+                      <h3
+                        class="text-white energlobix__text font-adelle-sans-regular tracking-wide"
+                      >
+                        YOUR INVESTMENT
+                      </h3>
+                    </div>
+                    <div class="approach-accordion-body">
+                      <p
+                        class="energlobix__card-text font-adelle-sans-regular approach-accordion-text"
+                      >
+                        Global demand for agricultural commodities continues to
+                        shape economies, infrastructure and future growth.
+                        Through strategic positioning within agriculture and
+                        global supply chains, EnerGlobix Agriculture focuses on
+                        opportunities built around long-term relevance,
+                        international demand and scalable commercial potential.
+                        We believe in creating value through strong
+                        partnerships, market insight and dependable global
+                        distribution
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section
+        id="section-contact"
+        class="bg-dark-green"
+        style="padding-bottom: 100px; min-height: 100vh;"
+      >
+        <div class="container contact-container">
+          <!-- Heading -->
+          <h1
+            class="energlobix__title font-adelle-sans-bold text-center text-gold"
+            style="font-weight: bold;"
+          >
+            Contact us
+          </h1>
+
+          <!-- Main Row -->
+          <div class="contact-layout px-0">
+            <!-- LEFT -->
+            <div class="contact-info">
+              <div class="mb-5">
+                <h2 class="contact-side-title">
+                  Office Location
+                </h2>
+
+                <p class="contact-side-text">
+                  Office 2704,<br />
+                  Jumeirah Business Center 2 (JBC 2),<br />
+                  JLT, Dubai, UAE
+                </p>
+              </div>
+
+              <div>
+                <h2 class="contact-side-title">
+                  Contact
+                </h2>
+
+                <p class="contact-side-text">
+                  info@energlobix.com
+                </p>
+              </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="contact-form-wrapper">
+              <div class="form-grid">
+                <input type="text" placeholder="Name*" class="custom-input" />
+
+                <input type="text" placeholder="Phone*" class="custom-input" />
+
+                <input type="email" placeholder="Email*" class="custom-input" />
+
+                <input
+                  type="text"
+                  placeholder="Company*"
+                  class="custom-input"
+                />
+              </div>
+
+              <input
+                type="text"
+                placeholder="Subject*"
+                class="custom-input subject-input"
+              />
+
+              <textarea
+                placeholder="Message*"
+                class="custom-input custom-textarea"
+              ></textarea>
+
+              <button type="submit" class="contact-btn">
+                SEND MESSAGE
+              </button>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <div class="contact-footer">
+            <img src="./assets/Links/logo.png" class="footer-logo" alt="" />
+
+           
+
+            <div class="footer-links-wrapper">
+              <h4 class="footer-link-text">
+                © EnerGlobix 2024
+              </h4>
+
+              <h4 class="footer-link-text footer-link-hover">
+                Terms of use
+              </h4>
+
+              <h4 class="footer-link-text footer-link-hover">
+                Privacy policy
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <button id="backToTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Javascript -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      // Wait until the entire page is loaded
+      window.addEventListener("load", function () {
+        // Hide the loader
+        document.getElementById("loader").style.display = "none";
+        // Show the main content
+        document.getElementById("main-content").style.display = "block";
+        // Show message in console
+        console.log("Content is loaded");
+      });
+
+      // Accordion Functionality
+      function toggleAccordion(item) {
+        const content = item.querySelector(".approach-accordion-body");
+        const isOpen = item.getAttribute("data-open") === "true";
+
+        // Close other items
+        document
+          .querySelectorAll(".approach-accordion-item")
+          .forEach((other) => {
+            if (other !== item) {
+              other.setAttribute("data-open", "false");
+              const otherBody = other.querySelector(".approach-accordion-body");
+              if (otherBody) {
+                otherBody.style.maxHeight = "0";
+                otherBody.style.opacity = "0";
+              }
+              const otherIcon = other.querySelector(".approach-accordion-icon");
+              if (otherIcon) {
+                otherIcon.style.transform = "rotate(0deg)";
+              }
+            }
+          });
+
+        const icon = item.querySelector(".approach-accordion-icon");
+        if (isOpen) {
+          item.setAttribute("data-open", "false");
+          if (content) {
+            content.style.maxHeight = "0";
+            content.style.opacity = "0";
+          }
+          if (icon) {
+            icon.style.transform = "rotate(0deg)";
+          }
+        } else {
+          item.setAttribute("data-open", "true");
+          if (content) {
+            content.style.maxHeight = content.scrollHeight + "px";
+            content.style.opacity = "1";
+          }
+          if (icon) {
+            icon.style.transform = "rotate(90deg)";
+          }
+        }
+      }
+
+      // Robust Menu Toggle and Accordion Logic
+      function initNavigationMenu() {
+        const openBtn = document.getElementById("open-menu-btn");
+        const navMenu = document.getElementById("nav-menu");
+        const closeBtn = document.getElementById("close-menu-btn");
+
+        if (!openBtn || !navMenu) return;
+
+        // Prevent duplicate listener binding
+        if (openBtn.dataset.bound) return;
+        openBtn.dataset.bound = "true";
+
+        openBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          navMenu.classList.toggle("active");
+        });
+
+        if (closeBtn) {
+          closeBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            navMenu.classList.remove("active");
+          });
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener("click", (e) => {
+          if (navMenu.classList.contains("active") && !navMenu.contains(e.target) && !openBtn.contains(e.target)) {
+            navMenu.classList.remove("active");
+          }
+        });
+      }
+
+      function initSubmenuAccordion() {
+        const submenuToggles = document.querySelectorAll(".toggle-submenu");
+        submenuToggles.forEach(toggle => {
+          if (toggle.dataset.bound) return;
+          toggle.dataset.bound = "true";
+
+          toggle.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const parentLi = toggle.closest(".has-submenu");
+            const submenu = parentLi.querySelector(".nav-submenu");
+            
+            // Close other submenus first (accordion behavior)
+            document.querySelectorAll(".nav-submenu").forEach(sub => {
+              if (sub !== submenu) sub.classList.remove("open");
+            });
+            document.querySelectorAll(".has-submenu").forEach(li => {
+              if (li !== parentLi) li.classList.remove("active");
+            });
+            
+            submenu.classList.toggle("open");
+            parentLi.classList.toggle("active");
+          });
+        });
+      }
+
+      // Initialize instantly
+      initNavigationMenu();
+      initSubmenuAccordion();
+
+      // Initialize on DOMContentLoaded
+      document.addEventListener("DOMContentLoaded", () => {
+        initNavigationMenu();
+        initSubmenuAccordion();
+      });
+
+      // Initialize on Window Load
+      window.addEventListener("load", () => {
+        initNavigationMenu();
+        initSubmenuAccordion();
+      });
+
+      // Dynamic padding logic for accordion div
+      document.addEventListener("DOMContentLoaded", () => {
+        const approachAccordion = document.getElementById("approach-accordion");
+        const sectionApproachInner = document.getElementById(
+          "section-approach-inner"
+        );
+        const sectionSignature = document.getElementById("section-signature");
+
+        if (approachAccordion && sectionApproachInner && sectionSignature) {
+          const adjustOverlapPadding = () => {
+            const isMobile = window.innerWidth < 1024;
+            const gap = 112; // 28 in tailwind unit
+            const topOffset = isMobile ? 100 : 140; // matches -mt-[100px] and -mt-[140px]
+
+            // We don't add halfHeight because the accordion is not absolute
+            sectionApproachInner.style.paddingBottom = `${gap}px`;
+            sectionSignature.style.paddingTop = `${topOffset + gap}px`;
+          };
+
+          const resizeObserver = new ResizeObserver(() => {
+            adjustOverlapPadding();
+          });
+
+          resizeObserver.observe(approachAccordion);
+          window.addEventListener("resize", adjustOverlapPadding);
+
+          // Initial calculation
+          setTimeout(adjustOverlapPadding, 100);
+        }
+      });
+
+      // Dynamic padding-top on hero-content-wrapper based on navbar height
+      document.addEventListener("DOMContentLoaded", () => {
+        const navbar = document.querySelector(".energlobix__navbar");
+        const heroWrapper = document.querySelector(".hero-content-wrapper");
+        if (navbar && heroWrapper) {
+          function syncNavbarPadding() {
+            const navHeight = navbar.getBoundingClientRect().height;
+            heroWrapper.style.paddingTop = navHeight + "px";
+          }
+          syncNavbarPadding();
+          window.addEventListener("resize", syncNavbarPadding);
+          const navResizeObserver = new ResizeObserver(syncNavbarPadding);
+          navResizeObserver.observe(navbar);
+        }
+      });
+    </script>
+  </body>
+</html>
